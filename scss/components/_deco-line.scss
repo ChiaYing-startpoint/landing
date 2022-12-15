@@ -1,0 +1,15 @@
+// 用絕對定位製作裝飾線
+.deco-line{
+    padding-left:12px;//讓文字往右偏4px
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;//上下滿高，top和bottom都要0
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background-color: $info;
+    }
+
+}
